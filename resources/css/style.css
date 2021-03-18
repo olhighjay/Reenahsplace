@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', 'san-serif';
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+/* ------ REUSABLE ------*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+
+/* --------- HEADINGS ------- */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 200%;
+  color: #fff;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #6b0b47;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* ------ PARAGRAPHS ------*/
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* ------ ICONS ------ */
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #6b0b47;
+  margin-bottom: 10px;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #6b0b47;
+
+  /*  Secrets to align text and icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+
+/* ------ LINKS ------ */
+a:link,
+a:visited {
+  color: #6b0b47;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #6b0b47;
+  transition: border-bottom 0.2a, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+
+
+/* ------ BUTTONS ------ */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 200px;
+  color: #fff;
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: #8a0e5b;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #eb4aad;
+  color: #fd74c9;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: #6b0b47;
+}
+
+
+/* ------ HEADER ------ */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(17, 0, 10, 0.878), #35012296), url('img/ban2.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent ;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #6b0b47 ;
+  transition: border-bottom 0.2s;
+}
+
+
+/* ------ FEATURES ------ */
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+
+/* ------ PERFUMES ------ */
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+  /* height: 80%; */
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  /* height: 80%; */
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1);
+  content: here there;
+}
+
+
+/* ------ HOW IT WORKS ------*/
+.section-steps {
+  background-color: #f4f4f4;
+}
+.steps-box {
+  margin-top: 30px;
+}
+
+.steps-box:first-child {
+  margin-top: 30px;
+  text-align: right;
+  padding-right: 3%;
+}
+
+.steps-box:last-child {
+  margin-top: 70px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+/* .app-screen {
+  width: 40%;
+} */
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 60px;
+}
+
+.works-step div {
+  color: #6b0b47;
+  border: 2px solid #6b0b47 ;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+  border:0;
+}
+
+ 
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+
+/* ------ SECTION CITIES ------ */
+/* .section-cities .row {
+  overflow: hidden;
+}
+
+.section-cities img {
+  height: 200px;
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+} */
+
+.box img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+
+/* ------ TESTIMONIALS ------ */
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.802), rgba(0, 0, 0, 0.809)), url('img/ban1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  overflow: auto;
+}
+
+.bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.802), rgba(0, 0, 0, 0.809)), url('img/ban1.jpg');
+   /* Full height */
+   height: 100%;
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* Add the blur effect */
+   filter: blur(5px);
+   -webkit-filter: blur(5px);
+   background-attachment: fixed;
+
+}
+
+.testimonials {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 400%;
+  display: block;
+  position: absolute;
+  top:5px;
+  left: 0;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+/* ------- SIGN UP ------ */
+.section-plans {
+  background-color: #f4f4f4;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left:5%;
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #6b0b47;
+}
+
+.plan-box div:first-child {
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: none;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: #6b0b47;
+}
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+  color: #6b0b47;
+}
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+
+
+/* ------- FORM ------ */
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[tpe=text],
+input[tpe=email],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px, solid #ccc
+}
+
+
+input[type=checkbox] {
+  margin: 10px 10px 10px 0;
+}
+
