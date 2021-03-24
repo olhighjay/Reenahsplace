@@ -1,0 +1,119 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row { padding: 0 2%; }
+
+  .testimonial-heading { margin-top: 80px;}
+}
+
+/* Small tablet to big tablet: from 760px to 1023px */
+@media only screen and (max-width: 1023px) {
+  body { font-size: 18px;}
+  section { padding: 60px 0;}
+
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .steps-box { margin-top: 10px; }
+  .steps-box:last-child { margin-top: 10px; }
+  .works-step { margin-bottom: 40px; }
+  .works-step:last-of-type { margin-bottom: 60px; }
+  .app-screen { 
+    width: 80%;
+    margin-top: -10%;
+  }
+
+  .icon-small {
+    width:17px;
+    margin-right: 5 px;
+  }
+  .city-feature { font-size: 90%;}
+
+  .plan-box {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .plan-price { font-size: 250%;}
+
+  .contact-form { width: 80%;}
+
+}
+
+
+/* Small phones to small tablest: from 481px tp 767px */
+@media only screen and (max-width: 767px) {
+  body { font-size: 16px;}
+  section { padding: 30px 0;}
+
+  .row,
+  .hero-text-box { padding: 0 4%;}
+
+  .col { 
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+
+  .main-nav { display: none;}
+
+  h1 { font-size: 180%;}
+  h2 { font-size: 150%;}
+
+  .long-copy {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .steps-box:first-child { text-align: center; }
+  .works-step div {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    margin-right: 15px;
+    font-size: 120%;
+  }
+  .works-step { margin-bottom: 30px; }
+  .works-step:last-of-type { margin-bottom: 40px; }
+  .app-screen { width: 70%;}
+
+}
+
+@media only screen and (max-width:518px) {
+
+  .testimonials { margin: 5% 0;}
+}
+
+/* Small phones : from 0 to 480px */
+@media only screen and (max-width:480px) {
+  section { padding: 25px 0;}
+  .contact-form { width: 100%;}
+
+  /* .section-testimonials {
+    height: 120vh;
+  } */
+  .testimonials {
+    font-size: 80%;
+    width: 100%;
+  }
+} 
+
+  /* Smallest phones : from 0 to 265px */
+@media only screen and (max-width:265px) {
+  section { padding: 25px 0;}
+  .contact-form { width: 100%;}
+
+  .section-testimonials {
+    height: 130vh;
+  }
+  .testimonials {
+    font-size: 80%;
+    width: 100%;
+    overflow-y: auto;
+  }
+  
+} 
