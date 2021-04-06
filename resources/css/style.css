@@ -617,3 +617,26 @@ footer p {
   margin-top: 20px;
   letter-spacing: 1px;
 }
+
+
+/* ANIMATIONS */
+.js-wp-1,
+.js-wp-2,
+.js-wp-3 {
+  opacity: 0;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  
+}
+
+.js-wp-4 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.js-wp-1.animate__animated,
+.js-wp-2.animate__animated,
+.js-wp-3.animate__animated {
+  opacity: 1;
+  /* transition: opacity 1s; */
+}
