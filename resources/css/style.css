@@ -124,7 +124,7 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #6b0b47;
-  transition: border-bottom 0.2a, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
 }
 
 a:hover,
@@ -194,10 +194,17 @@ header {
 }
 
 
-.logo {
+.logo-white {
   height: 100px;
   width: auto;
   margin-top: 20px;
+}
+
+.logo {
+  display: none;
+  height: 50px;
+  width: auto;
+  margin: 5px 0;
 }
 
 .main-nav {
@@ -226,6 +233,38 @@ header {
   border-bottom: 2px solid #6b0b47 ;
   transition: border-bottom 0.2s;
 }
+
+/* ------ STICKY NAV ------ */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: #555;
+}
+
+.sticky .logo-white {
+  display: none;
+}
+
+.sticky .logo {
+  display: inline-block;
+}
+
+
 
 
 /* ------ FEATURES ------ */
