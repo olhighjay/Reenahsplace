@@ -76,6 +76,19 @@ $(document).ready(function() {
   })
 
 
+  /* MOBILE NAVIGATION */
+  $('.js-nav-icon').click(function() {
+    var nav = $('.js-main-nav');
+    var icon = $('.i-icon')
+
+    nav.slideToggle(200)
+    if(icon.attr("name") == "menu-outline") {
+      icon.attr("name", "close-outline")
+    } else {
+      icon.attr("name", "menu-outline")
+    }
+  })
+
 
   
 })

@@ -197,13 +197,15 @@ header {
 .logo-white {
   height: 100px;
   width: auto;
-  margin-top: 20px;
+  margin-top: 10px;
+  float: left;
 }
 
 .logo {
   display: none;
   height: 50px;
   width: auto;
+  float: left;
   margin: 5px 0;
 }
 
@@ -234,6 +236,19 @@ header {
   transition: border-bottom 0.2s;
 }
 
+/* MOBILE NAV */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon ion-icon {
+  font-size: 200%;
+  color: #fff;
+}
+
 /* ------ STICKY NAV ------ */
 .sticky {
   position: fixed;
@@ -261,7 +276,7 @@ header {
 }
 
 .sticky .logo {
-  display: inline-block;
+  display: block;
 }
 
 
