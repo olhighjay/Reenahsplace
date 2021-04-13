@@ -178,7 +178,7 @@ input[type=submit]:active {
 
 /* ------ HEADER ------ */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(17, 0, 10, 0.878), #35012296), url('img/ban2.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(17, 0, 10, 0.878), #35012296), url('img/ban2-min.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -412,7 +412,7 @@ header {
 
 /* ------ TESTIMONIALS ------ */
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.802), rgba(0, 0, 0, 0.809)), url('img/ban1.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.802), rgba(0, 0, 0, 0.809)), url('img/ban1-min.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -423,7 +423,7 @@ header {
 }
 
 .bg-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.802), rgba(0, 0, 0, 0.809)), url('img/ban1.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.802), rgba(0, 0, 0, 0.809)), url('img/ban1-min.jpg');
    /* Full height */
    height: 100%;
 
