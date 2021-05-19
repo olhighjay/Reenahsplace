@@ -104,6 +104,13 @@ h2:after {
   margin-bottom: 10px;
 }
 
+.icon-big2 {
+  font-size: 275%;
+  text-align: center;
+  color: #6b0b47;
+  margin-bottom: 10px;
+}
+
 .icon-small {
   display: inline-block;
   width: 30px;
@@ -224,9 +231,11 @@ header {
 .main-nav li a:visited {
   padding: 8px 0;
   color: #fff;
+  letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 90%;
+  font-size: 80%;
+  font-weight: bolder;
   border-bottom: 2px solid transparent ;
 }
 
@@ -301,7 +310,7 @@ header {
 .meals-showcase li {
   display: block;
   float: left;
-  width: 25%;
+  width: 20%;
   /* height: 80%; */
 }
 
@@ -654,4 +663,31 @@ footer p {
 .js-wp-3.animate__animated {
   opacity: 1;
   /* transition: opacity 1s; */
+}
+
+/* NAV DROPDOWN */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.dropdown-content a {
+  color: black !important;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* .dropdown-content a:hover {background-color: #f1f1f1;} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* padding-left: 10px; */
 }
